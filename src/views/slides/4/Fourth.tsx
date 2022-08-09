@@ -1,8 +1,6 @@
-import styles from "./Second.module.css"
-
-export default function Second() {
+export default function () {
     return (
-        <div className={styles.slide}>
+        <div className="gray-bg">
             <h1 className="relative-h1">
                 Conteúdo da apresentação:
             </h1>

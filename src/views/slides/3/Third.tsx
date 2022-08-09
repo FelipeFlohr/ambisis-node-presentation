@@ -1,7 +1,8 @@
+import ImageBackground from "../../../components/imageBackground"
+import image from "../../../assets/slides/3.png"
+
 export default function Third() {
     return (
-        <div className="w-full h-full flex items-center justify-center bg-white">
-            <h1>Terceiro</h1>
-        </div>
+        <ImageBackground image={image} hexBackground="#323232" />
     )
 }
