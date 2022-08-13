@@ -1,5 +1,5 @@
 import ImageBackground from "../../../components/imageBackground";
-import image from "../../../assets/slides/1.png"
+import image from "../../../assets/imageslides/1.png"
 
 export default function First() {
     return (

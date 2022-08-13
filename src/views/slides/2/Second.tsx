@@ -1,11 +1,8 @@
-import styles from "./Second.module.css"
+import CenterTitleSlide from "../../../components/slide/CenterTitleSlide";
 
 export default function Second() {
     return (
-        <div className={styles.slide}>
-            <h1 className="relative-h1">
-                Conteúdo da apresentação:
-            </h1>
+        <CenterTitleSlide title="Conteúdo da apresentação:">
             <ol className="relative-text list-decimal pl-9 mt-3">
                 <li>O que é o <i>Node.js</i>?</li>
                 <li>O mundo antes do JavaScript</li>
@@ -18,6 +15,6 @@ export default function Second() {
                 <li>Web Scraping</li>
                 <li>Desafio</li>
             </ol>
-        </div>
+        </CenterTitleSlide>
     )
 }
