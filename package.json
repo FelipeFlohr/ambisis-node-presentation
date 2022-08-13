@@ -1,28 +1,36 @@
 {
   "name": "node-presentation",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/electron/main/index.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && electron-builder",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "electron": "^13.6.9",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router": "^6.3.0",
-    "react-router-dom": "^6.3.0"
+  "engines": {
+    "node": ">=14.17.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
     "autoprefixer": "^10.4.8",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.7",
-    "typescript": "^4.6.4",
-    "vite": "^3.0.0"
+    "electron": "^19.0.9",
+    "electron-builder": "^23.1.0",
+    "postcss": "^8.4.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.2",
+    "vite-plugin-electron": "^0.8.3"
+  },
+  "env": {
+    "VITE_DEV_SERVER_HOST": "127.0.0.1",
+    "VITE_DEV_SERVER_PORT": 7777
   }
 }
