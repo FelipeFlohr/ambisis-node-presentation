@@ -25,7 +25,6 @@ app.whenReady()
 
         // Loads the index
         const fullPath = path.join(__dirname, "../build/index.html");
-        console.log(fullPath);
         window.loadFile(fullPath);
     })
     .catch((err) => {

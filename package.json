@@ -6,7 +6,7 @@
   "main": "dist/electron/main/index.js",
   "scripts": {
     "build": "cls && webpack",
-    "start": "npm run build && electron src/index.js",
+    "start": "electron src/indexServer.js",
     "test": "jest"
   },
   "devDependencies": {
