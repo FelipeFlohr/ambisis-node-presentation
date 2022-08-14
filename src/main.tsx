@@ -1,6 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import { MemoryRouter, Route, Routes } from "react-router"
+import { BrowserRouter } from "react-router-dom"
 import Layout from "./components/layout/Layout"
 import "./stylesheets/index.css"
 import App from "./views/app/App"
@@ -12,7 +13,7 @@ import Fifth from "./views/slides/5/Fifth"
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <MemoryRouter>
+    <BrowserRouter>
       <Layout>
         <Routes>
           <Route path="/" element={<App />} />
@@ -23,6 +24,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           <Route path="/5" element={<Fifth />} />
         </Routes>
       </Layout>
-    </MemoryRouter>
+    </BrowserRouter>
   </React.StrictMode>
 )

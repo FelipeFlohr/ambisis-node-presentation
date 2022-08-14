@@ -26,6 +26,7 @@ server.startCallback(() => {
                     devTools: isDevEnv,
                     enableRemoteModule: true,
                     nodeIntegration: true,
+                    webSecurity: false
                 },
             });
             window.setMenuBarVisibility(isDevEnv);

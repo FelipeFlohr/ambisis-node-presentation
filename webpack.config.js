@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
+const nodeExternals = require("webpack-node-externals")
 
 const devMode = process.env.NODE_ENV === "development"
 
@@ -14,8 +15,8 @@ const devMode = process.env.NODE_ENV === "development"
  */
 const config = {
     mode: devMode ? "development" : "production",
-    devtool: "source-map",
-    target: "node",
+    devtool: devMode ? "eval-cheap-source-map" : "source-map",
+    target: "electron-renderer",
     entry: {
         "main.bundle": "./src/main.tsx",
     },
@@ -79,20 +80,21 @@ const config = {
         })
     ],
     devServer: {
-        compress: true,
         port: 8080,
         hot: false,
         liveReload: true,
-        client: {
-            progress: true
-        },
-        open: false
+        open: false,
+        historyApiFallback: true
     },
     performance: {
         maxEntrypointSize: 5120005,
         maxAssetSize: 5120005
     },
-    devtool: false
+    devtool: false,
+    externals: [
+        nodeExternals()
+    ],
+    watch: true
 };
 
 module.exports = config;
