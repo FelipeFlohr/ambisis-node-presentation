@@ -8,6 +8,7 @@ import First from "./views/slides/1/First"
 import Second from "./views/slides/2/Second"
 import Third from "./views/slides/3/Third"
 import Fourth from "./views/slides/4/Fourth"
+import Fifth from "./views/slides/5/Fifth"
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           <Route path="/2" element={<Second />} />
           <Route path="/3" element={<Third />} />
           <Route path="/4" element={<Fourth />} />
+          <Route path="/5" element={<Fifth />} />
         </Routes>
       </Layout>
     </MemoryRouter>
