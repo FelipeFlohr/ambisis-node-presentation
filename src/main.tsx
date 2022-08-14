@@ -10,6 +10,8 @@ import Second from "./views/slides/2/Second"
 import Third from "./views/slides/3/Third"
 import Fourth from "./views/slides/4/Fourth"
 import Fifth from "./views/slides/5/Fifth"
+import Sixth from "./views/slides/6/Sixth"
+import Seventh from "./views/slides/7/Seventh"
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -22,6 +24,8 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           <Route path="/3" element={<Third />} />
           <Route path="/4" element={<Fourth />} />
           <Route path="/5" element={<Fifth />} />
+          <Route path="/6" element={<Sixth />} />
+          <Route path="/7" element={<Seventh />} />
         </Routes>
       </Layout>
     </BrowserRouter>
