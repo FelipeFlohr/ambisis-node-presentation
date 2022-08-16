@@ -51,13 +51,7 @@ export default function Fifth() {
         setSyncStatus("Obtendo...")
     }
 
-    const asyncCode = `const app = express()
-app.get("/", async (req, res) => {
-    await sleep(3000);
-    res.json({ message: "Olá, mundo!" })
-})
-
-$.ajax({
+    const asyncCode = `$.ajax({
     url: "http://localhost:3000/",
     success: (res) => {
         setAsyncStatus(JSON.stringify(res))
@@ -67,13 +61,7 @@ $.ajax({
 setAsyncStatus("Obtendo...")
 `
 
-const syncCode = `const app = express()
-app.get("/", async (req, res) => {
-    await sleep(3000);
-    res.json({ message: "Olá, mundo!" })
-})
-
-$.ajax({
+const syncCode = `$.ajax({
     url: "http://localhost:3000/",
     success: (res) => {
         setAsyncStatus(JSON.stringify(res))
