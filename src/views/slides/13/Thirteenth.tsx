@@ -13,8 +13,8 @@ export default function Thirteenth() {
         <CenterTitleSlide title="WebAssembly">
             <div className="flex flex-col w-full h-full items-center justify-center">
                 <Unity unityProvider={unityProvider} style={{
-                    width: "800px",
-                    height: "600px"
+                    width: "640px",
+                    height: "480px"
                 }} />
             </div>
         </CenterTitleSlide>
