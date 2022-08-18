@@ -7,7 +7,7 @@ export default function Second() {
                 <li>O que é o <i>Node.js</i>?</li>
                 <li>O mundo antes do JavaScript</li>
                 <li>Uma breve história do JavaScript</li>
-                <li>Typescript: JavaScript porém bom</li>
+                <li>TypeScript: JavaScript porém bom</li>
                 <li>WebAssembly</li>
                 <li>Node.js no Front-end: React, Angular, Vue.js & Svelte</li>
                 <li>Node.js no Back-end: Express.js</li>
