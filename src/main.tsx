@@ -1,17 +1,21 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import { MemoryRouter, Route, Routes } from "react-router"
+import { Route, Routes } from "react-router"
 import { BrowserRouter } from "react-router-dom"
 import Layout from "./components/layout/Layout"
 import "./stylesheets/index.css"
 import App from "./views/app/App"
 import First from "./views/slides/1/First"
+import Tenth from "./views/slides/10/Tenth"
+import Eleventh from "./views/slides/11/Eleventh"
 import Second from "./views/slides/2/Second"
 import Third from "./views/slides/3/Third"
 import Fourth from "./views/slides/4/Fourth"
 import Fifth from "./views/slides/5/Fifth"
 import Sixth from "./views/slides/6/Sixth"
 import Seventh from "./views/slides/7/Seventh"
+import Eighth from "./views/slides/8/Eighth"
+import Nineth from "./views/slides/9/Nineth"
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -26,6 +30,10 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           <Route path="/5" element={<Fifth />} />
           <Route path="/6" element={<Sixth />} />
           <Route path="/7" element={<Seventh />} />
+          <Route path="/8" element={<Eighth />} />
+          <Route path="/9" element={<Nineth />} />
+          <Route path="/10" element={<Tenth />} />
+          <Route path="/11" element={<Eleventh />} />
         </Routes>
       </Layout>
     </BrowserRouter>

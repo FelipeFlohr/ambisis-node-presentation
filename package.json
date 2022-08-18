@@ -7,6 +7,7 @@
   "scripts": {
     "build": "cls && webpack",
     "start": "electron src/indexServer.js",
+    "static": "electron src/indexFile.js",
     "test": "jest"
   },
   "devDependencies": {
