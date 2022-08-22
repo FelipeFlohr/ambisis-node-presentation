@@ -9,7 +9,7 @@ export default function Second() {
                 <li>Uma breve história do JavaScript</li>
                 <li>TypeScript: JavaScript porém bom</li>
                 <li>WebAssembly</li>
-                <li>Node.js no Front-end: React, Angular, Vue.js & Svelte</li>
+                <li>Node.js no Front-end: Vanilla <i>versus</i> React.js</li>
                 <li>Node.js no Back-end: Express.js</li>
                 <li>Web Scraping</li>
                 <li>Desafio</li>
