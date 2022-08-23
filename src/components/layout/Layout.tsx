@@ -52,6 +52,12 @@ export default function Layout(props: LayoutProps) {
         }
     }
 
+    const handleEnterPressSlideNumber = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === "Enter") {
+            handleGoButton()
+        }
+    }
+
     useEffect(() => {
         window.onkeydown = e => {
             if (e.key === "ArrowLeft") {
@@ -71,7 +77,7 @@ export default function Layout(props: LayoutProps) {
                 <div className={`bg-slate-900 w-52 h-24 rounded-xl mt-2 p-1 shadow-2xl ${showGoTo ? "visible" : "hidden"}`}>
                     <h1 className="text-white">Go to:</h1>
                     <div className="flex mt-2">
-                        <input onChange={handleGoValue} className="w-40 mt-1 ml-1 text-black pl-2 rounded-md" type="number" value={goValue} />
+                        <input onChange={handleGoValue} className="w-40 mt-1 ml-1 text-black pl-2 rounded-md" type="number" value={goValue} onKeyDown={handleEnterPressSlideNumber} />
                         <button onClick={handleGoButton} className="text-white ml-2">Go</button>
                     </div>
                 </div>
