@@ -25,7 +25,7 @@ const config = {
             {
                 test: /\.tsx?$/,
                 loader: "ts-loader",
-
+                exclude: path.resolve("src/projects/react")
             },
             {
                 test: /\.css$/i,
