@@ -21,15 +21,16 @@ import Thirteenth from "./views/slides/13/Thirteenth"
 import Fourteenth from "./views/slides/14/Fourteenth"
 import Fifteenth from "./views/slides/15/Fifteenth"
 import Sixteenth from "./views/slides/16/Sixteenth"
+import Seventeenth from "./views/slides/17/Seventeenth"
 import Eighteenth from "./views/slides/18/Eighteenth"
 import Nineteenth from "./views/slides/19/Nineteenth"
-import Seventeenth from "./views/slides/17/Seventeenth"
 import Twentieth from "./views/slides/20/Twentieth"
 import TwentyFirst from "./views/slides/21/TwentyFirst"
 import TwentySecond from "./views/slides/22/TwentySecond"
 import TwentyThird from "./views/slides/23/TwentyThird"
 import TwentyFourth from "./views/slides/24/TwentyFourth"
 import TwentyFifth from "./views/slides/25/TwentyFifth"
+import TwentySixth from "./views/slides/26/TwentySixth"
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -62,6 +63,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           <Route path="/23" element={<TwentyThird />} />
           <Route path="/24" element={<TwentyFourth />} />
           <Route path="/25" element={<TwentyFifth />} />
+          <Route path="/26" element={<TwentySixth />} />
         </Routes>
       </Layout>
     </BrowserRouter>
