@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperativo</title>
+</head>
+<body>
+    <ul id="afazeres"></ul>
+
+    <form>
+        <input type="text" name="afazer">
+        <input type="submit" value="Adicionar afazer">
+    </form>
+
+    <script>
+        const form = document.querySelector("form")
+        const input = document.querySelector("input[type='submit']")
+        const lista = document.getElementById("afazeres")
+
+        function addAfazer(texto) {
+            const li = document.createElement("li")
+            li.innerHTML = texto
+            lista.appendChild(li)
+        }
+
+        input.onclick = addAfazer
+    </script>
+</body>
+</html>
