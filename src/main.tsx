@@ -25,6 +25,7 @@ import Eighteenth from "./views/slides/18/Eighteenth"
 import Nineteenth from "./views/slides/19/Nineteenth"
 import Seventeenth from "./views/slides/17/Seventeenth"
 import Twentieth from "./views/slides/20/Twentieth"
+import TwentyFirst from "./views/slides/21/TwentyFirst"
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -52,6 +53,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           <Route path="/18" element={<Eighteenth />} />
           <Route path="/19" element={<Nineteenth />} />
           <Route path="/20" element={<Twentieth />} />
+          <Route path="/21" element={<TwentyFirst />} />
         </Routes>
       </Layout>
     </BrowserRouter>
