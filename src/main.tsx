@@ -31,6 +31,7 @@ import TwentyThird from "./views/slides/23/TwentyThird"
 import TwentyFourth from "./views/slides/24/TwentyFourth"
 import TwentyFifth from "./views/slides/25/TwentyFifth"
 import TwentySixth from "./views/slides/26/TwentySixth"
+import TwentySeventh from "./views/slides/27/TwentySeventh"
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -64,6 +65,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           <Route path="/24" element={<TwentyFourth />} />
           <Route path="/25" element={<TwentyFifth />} />
           <Route path="/26" element={<TwentySixth />} />
+          <Route path="/27" element={<TwentySeventh />} />
         </Routes>
       </Layout>
     </BrowserRouter>
