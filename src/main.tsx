@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import { Route, Routes } from "react-router"
-import { BrowserRouter } from "react-router-dom"
+import { MemoryRouter } from "react-router-dom"
 import Layout from "./components/layout/Layout"
 import "./stylesheets/index.css"
 import App from "./views/app/App"
@@ -35,7 +35,7 @@ import TwentySeventh from "./views/slides/27/TwentySeventh"
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <MemoryRouter>
       <Layout>
         <Routes>
           <Route path="/" element={<App />} />
@@ -68,6 +68,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           <Route path="/27" element={<TwentySeventh />} />
         </Routes>
       </Layout>
-    </BrowserRouter>
+    </MemoryRouter>
   </React.StrictMode>
 )
